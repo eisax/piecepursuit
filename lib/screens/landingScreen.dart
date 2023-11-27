@@ -1,5 +1,8 @@
+// ignore_for_file: prefer_const_constructors, file_names
+
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:piece_pursuit/screens/constance.dart';
 import 'package:piece_pursuit/screens/homeScreen.dart';
 import 'package:piece_pursuit/screens/startGame.dart';
 
@@ -12,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Puzzle Game',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: lightbrown, ),
         useMaterial3: true,
       ),
       home: const LandingScreen(),
@@ -26,6 +29,7 @@ class LandingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       backgroundColor: lightbrown,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -40,7 +44,7 @@ class LandingScreen extends StatelessWidget {
             const SizedBox(height: 20),
             const Text(
               'PIECE PURSUIT',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 20,color: darkbrown),
             ),
 
             const SizedBox(height: 20),
@@ -58,11 +62,11 @@ class LandingScreen extends StatelessWidget {
               },
               child: const Text('Play'),
             ),
-            const SizedBox(height: 10), // Add space between buttons
+            const SizedBox(height: 30), // Add space between buttons
             ElevatedButton(
               style: ButtonStyle(
                 fixedSize: MaterialStateProperty.all(
-                    Size(300, 50)), // Set the width and height
+                    Size(300, 50)),// Set the width and height
               ),
               onPressed: () {
                 Navigator.push(

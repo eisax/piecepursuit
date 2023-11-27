@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, file_names, library_private_types_in_public_api
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -172,10 +174,13 @@ class PuzzleGameScreen extends StatelessWidget {
                                         ),
                                       ],
                                     ),
-                                    child: Text(
-                                      ' Animals',
-                                      style: TextStyle(color: Colors.white),
-                                      textAlign: TextAlign.center,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(4.0),
+                                      child: Text(
+                                        ' Animals',
+                                        style: TextStyle(color: Colors.white),
+                                        textAlign: TextAlign.center,
+                                      ),
                                     ),
                                   ),
                               ],
@@ -208,6 +213,9 @@ class _SettingsPopupState extends State<SettingsPopup> {
   @override
   Widget build(BuildContext context) {
     return Container(
+       decoration:BoxDecoration(color: lightbrown,
+      borderRadius:BorderRadius.only(topLeft: Radius.circular(8),topRight: Radius.circular(8))
+      ),
       child: Wrap(
         children: [
           ListTile(
@@ -243,13 +251,13 @@ class _SettingsPopupState extends State<SettingsPopup> {
               // Handle help option
             },
           ),
-          ListTile(
-            leading: Icon(Icons.language),
-            title: Text('Language'),
-            onTap: () {
-              // Handle language option
-            },
-          ),
+          // ListTile(
+          //   leading: Icon(Icons.language),
+          //   title: Text('Language'),
+          //   onTap: () {
+          //     // Handle language option
+          //   },
+          // ),
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Quit'),
