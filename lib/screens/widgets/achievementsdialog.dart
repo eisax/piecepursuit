@@ -39,7 +39,8 @@ class AchievementsAlertDialog {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.only(top: 20.0, left: 10),
+                                  padding: const EdgeInsets.only(
+                                      top: 20.0, left: 10),
                                   child: Align(
                                     alignment: Alignment.topRight,
                                     child: ElevatedButton(
@@ -101,7 +102,7 @@ class AchievementsAlertDialog {
                                                       color: Colors.white,
                                                       fontWeight:
                                                           FontWeight.bold,
-                                                      fontSize: width * 0.04),
+                                                      fontSize: width * 0.03),
                                                 ),
                                               ),
                                               Row(
@@ -149,12 +150,14 @@ class AchievementsAlertDialog {
                                                           child: Text(
                                                             "20",
                                                             style: TextStyle(
-                                                                color: Colors
-                                                                    .white,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold,
-                                                                 fontSize: width * 0.04,),
+                                                              color:
+                                                                  Colors.white,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontSize:
+                                                                  width * 0.04,
+                                                            ),
                                                           ),
                                                         )
                                                       ],
@@ -205,8 +208,7 @@ class AchievementsAlertDialog {
                                                       fontWeight:
                                                           FontWeight.bold,
                                                       fontSize: width * 0.03),
-                                                        softWrap:
-                                                      true, 
+                                                  softWrap: true,
                                                 ),
                                               ),
                                               Row(
@@ -254,12 +256,14 @@ class AchievementsAlertDialog {
                                                           child: Text(
                                                             "20",
                                                             style: TextStyle(
-                                                                color: Colors
-                                                                    .white,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold,
-                                                                fontSize: width * 0.04,),
+                                                              color:
+                                                                  Colors.white,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontSize:
+                                                                  width * 0.04,
+                                                            ),
                                                           ),
                                                         )
                                                       ],
@@ -310,8 +314,7 @@ class AchievementsAlertDialog {
                                                     fontWeight: FontWeight.bold,
                                                     fontSize: width * 0.03,
                                                   ),
-                                                  softWrap:
-                                                      true, 
+                                                  softWrap: true,
                                                 ),
                                               ),
                                               Row(
@@ -359,12 +362,14 @@ class AchievementsAlertDialog {
                                                           child: Text(
                                                             "20",
                                                             style: TextStyle(
-                                                                color: Colors
-                                                                    .white,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold,
-                                                                 fontSize: width * 0.04,),
+                                                              color:
+                                                                  Colors.white,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontSize:
+                                                                  width * 0.04,
+                                                            ),
                                                           ),
                                                         )
                                                       ],
