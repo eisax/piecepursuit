@@ -39,8 +39,8 @@ class AchievementsAlertDialog {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      vertical: 16.0),
+                                  padding: const EdgeInsets.only(
+                                      top: 20.0, left: 10),
                                   child: Align(
                                     alignment: Alignment.topRight,
                                     child: ElevatedButton(
@@ -65,7 +65,7 @@ class AchievementsAlertDialog {
                                   ),
                                 ),
                                 SizedBox(
-                                  height: 16,
+                                  height: height * 0.01,
                                 ),
                                 Center(
                                   child: Padding(
@@ -93,65 +93,80 @@ class AchievementsAlertDialog {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Text(
-                                                "Completed 0 Puzzles",
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 12),
-                                              ),
-                                              Container(
-                                                width: 200,
-                                                child: Stack(
-                                                  children: [
-                                                    Container(
-                                                      height: 18,
-                                                      width: 200,
-                                                      decoration: BoxDecoration(
-                                                          color:
-                                                              Color(0xFF200705),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(5)),
-                                                    ),
-                                                    Positioned(
-                                                      child: MyProgressBar(
-                                                        width: 200,
-                                                        height: 18,
-                                                        color: green,
-                                                        borderRadius: 5,
-                                                      ),
-                                                    ),
-                                                  ],
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                    top: 18.0, bottom: 0),
+                                                child: Text(
+                                                  "Completed 0 Puzzles",
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: width * 0.03),
                                                 ),
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Container(
+                                                    width: width * 0.3,
+                                                    child: Stack(
+                                                      children: [
+                                                        Container(
+                                                          height: 18,
+                                                          width: 200,
+                                                          decoration: BoxDecoration(
+                                                              color: Color(
+                                                                  0xFF200705),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          5)),
+                                                        ),
+                                                        Positioned(
+                                                          child: MyProgressBar(
+                                                            width: width * 0.3,
+                                                            height: 18,
+                                                            color: green,
+                                                            borderRadius: 5,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 40.0),
+                                                    child: Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 30,
+                                                          child: Image(
+                                                            image: AssetImage(
+                                                                'assets/coins.png'),
+                                                          ),
+                                                        ),
+                                                        Positioned(
+                                                          child: Text(
+                                                            "20",
+                                                            style: TextStyle(
+                                                              color:
+                                                                  Colors.white,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontSize:
+                                                                  width * 0.04,
+                                                            ),
+                                                          ),
+                                                        )
+                                                      ],
+                                                    ),
+                                                  )
+                                                ],
                                               )
                                             ],
                                           ),
-                                          Stack(
-                                            children: [
-                                              SizedBox(
-                                                width: 30,
-                                                child: Image(
-                                                  image: AssetImage(
-                                                      'assets/coins.png'),
-                                                ),
-                                              ),
-                                              Positioned(
-                                                child: Padding(
-                                                  padding:
-                                                      EdgeInsets.only(top: 29),
-                                                  child: Text(
-                                                    "200",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        fontSize: 18),
-                                                  ),
-                                                ),
-                                              )
-                                            ],
-                                          )
                                         ],
                                       ),
                                     ),
@@ -183,65 +198,81 @@ class AchievementsAlertDialog {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Text(
-                                                "Completed 0 Puzzles",
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 12),
-                                              ),
-                                              Container(
-                                                width: 200,
-                                                child: Stack(
-                                                  children: [
-                                                    Container(
-                                                      height: 18,
-                                                      width: 200,
-                                                      decoration: BoxDecoration(
-                                                          color:
-                                                              Color(0xFF200705),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(5)),
-                                                    ),
-                                                    Positioned(
-                                                      child: MyProgressBar(
-                                                        width: 200,
-                                                        height: 18,
-                                                        color: green,
-                                                        borderRadius: 5,
-                                                      ),
-                                                    ),
-                                                  ],
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                    top: 18.0, bottom: 0),
+                                                child: Text(
+                                                  "Completed 0 Puzzles without Hints",
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: width * 0.03),
+                                                  softWrap: true,
                                                 ),
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Container(
+                                                    width: width * 0.3,
+                                                    child: Stack(
+                                                      children: [
+                                                        Container(
+                                                          height: 18,
+                                                          width: 200,
+                                                          decoration: BoxDecoration(
+                                                              color: Color(
+                                                                  0xFF200705),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          5)),
+                                                        ),
+                                                        Positioned(
+                                                          child: MyProgressBar(
+                                                            width: width * 0.3,
+                                                            height: 18,
+                                                            color: green,
+                                                            borderRadius: 5,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 40.0),
+                                                    child: Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 30,
+                                                          child: Image(
+                                                            image: AssetImage(
+                                                                'assets/coins.png'),
+                                                          ),
+                                                        ),
+                                                        Positioned(
+                                                          child: Text(
+                                                            "20",
+                                                            style: TextStyle(
+                                                              color:
+                                                                  Colors.white,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontSize:
+                                                                  width * 0.04,
+                                                            ),
+                                                          ),
+                                                        )
+                                                      ],
+                                                    ),
+                                                  )
+                                                ],
                                               )
                                             ],
                                           ),
-                                          Stack(
-                                            children: [
-                                              SizedBox(
-                                                width: 30,
-                                                child: Image(
-                                                  image: AssetImage(
-                                                      'assets/coins.png'),
-                                                ),
-                                              ),
-                                              Positioned(
-                                                child: Padding(
-                                                  padding:
-                                                      EdgeInsets.only(top: 29),
-                                                  child: Text(
-                                                    "200",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        fontSize: 18),
-                                                  ),
-                                                ),
-                                              )
-                                            ],
-                                          )
                                         ],
                                       ),
                                     ),
@@ -273,155 +304,81 @@ class AchievementsAlertDialog {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Text(
-                                                "Completed 0 Puzzles without Hints",
-                                                style: TextStyle(
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                    top: 18.0, bottom: 0),
+                                                child: Text(
+                                                  "Completed 0 Piences Puzzle",
+                                                  style: TextStyle(
                                                     color: Colors.white,
                                                     fontWeight: FontWeight.bold,
-                                                    fontSize: 12),
-                                              ),
-                                              Container(
-                                                width: 200,
-                                                child: Stack(
-                                                  children: [
-                                                    Container(
-                                                      height: 18,
-                                                      width: 200,
-                                                      decoration: BoxDecoration(
-                                                          color:
-                                                              Color(0xFF200705),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(5)),
-                                                    ),
-                                                    Positioned(
-                                                      child: MyProgressBar(
-                                                        width: 200,
-                                                        height: 18,
-                                                        color: green,
-                                                        borderRadius: 5,
-                                                      ),
-                                                    ),
-                                                  ],
+                                                    fontSize: width * 0.03,
+                                                  ),
+                                                  softWrap: true,
                                                 ),
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Container(
+                                                    width: width * 0.3,
+                                                    child: Stack(
+                                                      children: [
+                                                        Container(
+                                                          height: 18,
+                                                          width: 200,
+                                                          decoration: BoxDecoration(
+                                                              color: Color(
+                                                                  0xFF200705),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          5)),
+                                                        ),
+                                                        Positioned(
+                                                          child: MyProgressBar(
+                                                            width: width * 0.3,
+                                                            height: 18,
+                                                            color: green,
+                                                            borderRadius: 5,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 40.0),
+                                                    child: Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 30,
+                                                          child: Image(
+                                                            image: AssetImage(
+                                                                'assets/coins.png'),
+                                                          ),
+                                                        ),
+                                                        Positioned(
+                                                          child: Text(
+                                                            "20",
+                                                            style: TextStyle(
+                                                              color:
+                                                                  Colors.white,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontSize:
+                                                                  width * 0.04,
+                                                            ),
+                                                          ),
+                                                        )
+                                                      ],
+                                                    ),
+                                                  )
+                                                ],
                                               )
                                             ],
                                           ),
-                                          Stack(
-                                            children: [
-                                              SizedBox(
-                                                width: 30,
-                                                child: Image(
-                                                  image: AssetImage(
-                                                      'assets/coins.png'),
-                                                ),
-                                              ),
-                                              Positioned(
-                                                child: Padding(
-                                                  padding:
-                                                      EdgeInsets.only(top: 29),
-                                                  child: Text(
-                                                    "200",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        fontSize: 18),
-                                                  ),
-                                                ),
-                                              )
-                                            ],
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 16),
-                                    child: ElevatedButton(
-                                      onPressed: () {},
-                                      style: ElevatedButton.styleFrom(
-                                        minimumSize: Size(40, 80),
-                                        backgroundColor: creme,
-                                        elevation: 2.0,
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5.0),
-                                          side: BorderSide(
-                                              color: darkbrown.withOpacity(0.5),
-                                              width: 1.0),
-                                        ),
-                                      ),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                "Completed 0 Piences Puzzle",
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 12),
-                                              ),
-                                              Container(
-                                                width: 200,
-                                                child: Stack(
-                                                  children: [
-                                                    Container(
-                                                      height: 18,
-                                                      width: 200,
-                                                      decoration: BoxDecoration(
-                                                          color:
-                                                              Color(0xFF200705),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(5)),
-                                                    ),
-                                                    Positioned(
-                                                      child: MyProgressBar(
-                                                        width: 200,
-                                                        height: 18,
-                                                        color: green,
-                                                        borderRadius: 5,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                          Stack(
-                                            children: [
-                                              SizedBox(
-                                                width: 30,
-                                                child: Image(
-                                                  image: AssetImage(
-                                                      'assets/coins.png'),
-                                                ),
-                                              ),
-                                              Positioned(
-                                                child: Padding(
-                                                  padding:
-                                                      EdgeInsets.only(top: 29),
-                                                  child: Text(
-                                                    "200",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        fontSize: 18),
-                                                  ),
-                                                ),
-                                              )
-                                            ],
-                                          )
                                         ],
                                       ),
                                     ),
@@ -481,7 +438,8 @@ class AchievementsAlertDialog {
                                           width: width * 0.55,
                                           height: 50,
                                           decoration: BoxDecoration(
-                                            border: Border.all(width: 2,color: lightbrown),
+                                            border: Border.all(
+                                                width: 2, color: lightbrown),
                                             borderRadius:
                                                 BorderRadius.circular(50),
                                             gradient: LinearGradient(
